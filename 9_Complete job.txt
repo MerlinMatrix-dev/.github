@@ -1,0 +1,13 @@
+﻿2024-05-16T15:45:56.3050714Z ##[debug]Starting: Complete job
+2024-05-16T15:45:56.3052550Z Uploading runner diagnostic logs
+2024-05-16T15:45:56.3100108Z ##[debug]Starting diagnostic file upload.
+2024-05-16T15:45:56.3100561Z ##[debug]Setting up diagnostic log folders.
+2024-05-16T15:45:56.3103992Z ##[debug]Creating diagnostic log files folder.
+2024-05-16T15:45:56.3120867Z ##[debug]Copying 1 worker diagnostic logs.
+2024-05-16T15:45:56.3138038Z ##[debug]Copying 1 runner diagnostic logs.
+2024-05-16T15:45:56.3139308Z ##[debug]Zipping diagnostic files.
+2024-05-16T15:45:56.3205807Z ##[debug]Uploading diagnostic metadata file.
+2024-05-16T15:45:56.3227025Z ##[debug]Diagnostic file upload complete.
+2024-05-16T15:45:56.3227702Z Completed runner diagnostic log upload
+2024-05-16T15:45:56.3228061Z Cleaning up orphan processes
+2024-05-16T15:45:56.3557727Z ##[debug]Finishing: Complete job

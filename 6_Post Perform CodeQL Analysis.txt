@@ -1,0 +1,63 @@
+﻿2024-05-16T15:45:10.4683675Z ##[debug]Evaluating condition for step: 'Post Perform CodeQL Analysis'
+2024-05-16T15:45:10.4686019Z ##[debug]Evaluating: always()
+2024-05-16T15:45:10.4686481Z ##[debug]Evaluating always:
+2024-05-16T15:45:10.4687333Z ##[debug]=> true
+2024-05-16T15:45:10.4687850Z ##[debug]Result: true
+2024-05-16T15:45:10.4688508Z ##[debug]Starting: Post Perform CodeQL Analysis
+2024-05-16T15:45:10.4720019Z ##[debug]Loading inputs
+2024-05-16T15:45:10.4724605Z ##[debug]Evaluating: github.workspace
+2024-05-16T15:45:10.4724989Z ##[debug]Evaluating Index:
+2024-05-16T15:45:10.4725285Z ##[debug]..Evaluating github:
+2024-05-16T15:45:10.4725596Z ##[debug]..=> Object
+2024-05-16T15:45:10.4725877Z ##[debug]..Evaluating String:
+2024-05-16T15:45:10.4726187Z ##[debug]..=> 'workspace'
+2024-05-16T15:45:10.4726596Z ##[debug]=> '/home/runner/work/vscode-gitlens/vscode-gitlens'
+2024-05-16T15:45:10.4727133Z ##[debug]Result: '/home/runner/work/vscode-gitlens/vscode-gitlens'
+2024-05-16T15:45:10.4730473Z ##[debug]Evaluating: github.token
+2024-05-16T15:45:10.4730829Z ##[debug]Evaluating Index:
+2024-05-16T15:45:10.4731116Z ##[debug]..Evaluating github:
+2024-05-16T15:45:10.4731419Z ##[debug]..=> Object
+2024-05-16T15:45:10.4731684Z ##[debug]..Evaluating String:
+2024-05-16T15:45:10.4731969Z ##[debug]..=> 'token'
+2024-05-16T15:45:10.4732482Z ##[debug]=> '***'
+2024-05-16T15:45:10.4732867Z ##[debug]Result: '***'
+2024-05-16T15:45:10.4734090Z ##[debug]Evaluating: toJson(matrix)
+2024-05-16T15:45:10.4734432Z ##[debug]Evaluating toJson:
+2024-05-16T15:45:10.4734719Z ##[debug]..Evaluating matrix:
+2024-05-16T15:45:10.4735021Z ##[debug]..=> Object
+2024-05-16T15:45:10.4735395Z ##[debug]=> '{
+2024-05-16T15:45:10.4735648Z ##[debug]  "language": "javascript"
+2024-05-16T15:45:10.4735943Z ##[debug]}'
+2024-05-16T15:45:10.4736180Z ##[debug]Result: '{
+2024-05-16T15:45:10.4736438Z ##[debug]  "language": "javascript"
+2024-05-16T15:45:10.4736719Z ##[debug]}'
+2024-05-16T15:45:10.4738181Z ##[debug]Loading env
+2024-05-16T15:45:10.4743727Z Post job cleanup.
+2024-05-16T15:45:10.7624960Z ##[debug]Loaded config:
+2024-05-16T15:45:10.7632358Z ##[debug]{"languages":["javascript"],"originalUserInput":{},"tempDir":"/home/runner/work/_temp","codeQLCmd":"/opt/hostedtoolcache/CodeQL/2.17.2/x64/codeql/codeql","gitHubVersion":{"type":0},"dbLocation":"/home/runner/work/_temp/codeql_databases","debugMode":true,"debugArtifactName":"debug-artifacts","debugDatabaseName":"db","augmentationProperties":{"packsInputCombines":false,"queriesInputCombines":false},"trapCaches":{"javascript":"/home/runner/work/_temp/trapCaches/javascript"},"trapCacheDownloadTime":880.9464390000212}
+2024-05-16T15:45:10.7636965Z Debug mode is on. Uploading available SARIF files as Actions debugging artifact...
+2024-05-16T15:45:10.7647885Z Starting artifact upload
+2024-05-16T15:45:10.7650002Z For more detailed logs during the artifact upload process, enable step-debugging: https://docs.github.com/actions/monitoring-and-troubleshooting-workflows/enabling-debug-logging#enabling-step-debug-logging
+2024-05-16T15:45:10.7651910Z Artifact name is valid!
+2024-05-16T15:45:10.7664626Z ##[debug]Artifact Url: https://pipelinesghubeus6.actions.githubusercontent.com/bJNAyTAWufV1yrQ2VRILLfBKVK2de0RXxDGSG5ggiqx98zOFPn/_apis/pipelines/workflows/9101897815/artifacts?api-version=6.0-preview
+2024-05-16T15:45:11.0515077Z ##[debug]Upload Resource URL: https://pipelinesghubeus6.actions.githubusercontent.com/bJNAyTAWufV1yrQ2VRILLfBKVK2de0RXxDGSG5ggiqx98zOFPn/_apis/resources/Containers/16806749
+2024-05-16T15:45:11.0517668Z Container for artifact "debug-artifacts-javascript" successfully created. Starting upload of file(s)
+2024-05-16T15:45:11.0519235Z ##[debug]File Concurrency: 2, and Chunk Size: 8388608
+2024-05-16T15:45:11.0549727Z ##[debug]/home/runner/work/vscode-gitlens/results/javascript.sarif is greater than 64k in size. Creating a gzip file on-disk /tmp/tmp-2383-rmWzlBkwKfZk to potentially reduce the upload size
+2024-05-16T15:45:11.0825892Z ##[debug]The gzip file created for /home/runner/work/vscode-gitlens/results/javascript.sarif is smaller than the original file. The file will be uploaded using gzip.
+2024-05-16T15:45:11.7626314Z ##[debug]deleting temporary gzip file /tmp/tmp-2383-rmWzlBkwKfZk
+2024-05-16T15:45:11.7633319Z ##[debug]File: 1/1. /home/runner/work/vscode-gitlens/results/javascript.sarif took 710.825 milliseconds to finish upload
+2024-05-16T15:45:11.7636679Z Total size of all the files uploaded is 96956 bytes
+2024-05-16T15:45:11.7637906Z File upload process has finished. Finalizing the artifact upload
+2024-05-16T15:45:11.7642007Z ##[debug]Artifact Url: https://pipelinesghubeus6.actions.githubusercontent.com/bJNAyTAWufV1yrQ2VRILLfBKVK2de0RXxDGSG5ggiqx98zOFPn/_apis/pipelines/workflows/9101897815/artifacts?api-version=6.0-preview
+2024-05-16T15:45:11.7645466Z ##[debug]URL is https://pipelinesghubeus6.actions.githubusercontent.com/bJNAyTAWufV1yrQ2VRILLfBKVK2de0RXxDGSG5ggiqx98zOFPn/_apis/pipelines/workflows/9101897815/artifacts?api-version=6.0-preview&artifactName=debug-artifacts-javascript
+2024-05-16T15:45:12.0242090Z ##[debug]Artifact debug-artifacts-javascript has been successfully uploaded, total size in bytes: 1433939
+2024-05-16T15:45:12.0243546Z Artifact has been finalized. All files have been successfully uploaded!
+2024-05-16T15:45:12.0243992Z 
+2024-05-16T15:45:12.0244288Z The raw size of all the files that were specified for upload is 1433939 bytes
+2024-05-16T15:45:12.0245428Z The size of all the files that were uploaded is 96956 bytes. This takes into account any gzip compression used to reduce the upload size, time and storage
+2024-05-16T15:45:12.0246252Z 
+2024-05-16T15:45:12.0247254Z Note: The size of downloaded zips can differ significantly from the reported size. For more information see: https://github.com/actions/upload-artifact#zipped-artifact-downloads 
+2024-05-16T15:45:12.0248210Z 
+2024-05-16T15:45:12.0381520Z ##[debug]Node Action run completed with exit code 0
+2024-05-16T15:45:12.0385373Z ##[debug]Finishing: Post Perform CodeQL Analysis

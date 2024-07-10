@@ -1,0 +1,52 @@
+﻿2024-05-16T15:42:42.2824160Z ##[debug]Starting: Set up job
+2024-05-16T15:42:42.2824758Z Current runner version: '2.316.1'
+2024-05-16T15:42:42.2844708Z ##[group]Operating System
+2024-05-16T15:42:42.2845374Z Ubuntu
+2024-05-16T15:42:42.2845741Z 22.04.4
+2024-05-16T15:42:42.2846069Z LTS
+2024-05-16T15:42:42.2846440Z ##[endgroup]
+2024-05-16T15:42:42.2846844Z ##[group]Runner Image
+2024-05-16T15:42:42.2847275Z Image: ubuntu-22.04
+2024-05-16T15:42:42.2847697Z Version: 20240514.2.0
+2024-05-16T15:42:42.2848685Z Included Software: https://github.com/actions/runner-images/blob/ubuntu22/20240514.2/images/ubuntu/Ubuntu2204-Readme.md
+2024-05-16T15:42:42.2850110Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu22%2F20240514.2
+2024-05-16T15:42:42.2851031Z ##[endgroup]
+2024-05-16T15:42:42.2851443Z ##[group]Runner Image Provisioner
+2024-05-16T15:42:42.2851924Z 2.0.369.1
+2024-05-16T15:42:42.2852482Z ##[endgroup]
+2024-05-16T15:42:42.2853577Z ##[group]GITHUB_TOKEN Permissions
+2024-05-16T15:42:42.2855170Z Actions: read
+2024-05-16T15:42:42.2855679Z Contents: read
+2024-05-16T15:42:42.2856168Z Metadata: read
+2024-05-16T15:42:42.2856579Z SecurityEvents: write
+2024-05-16T15:42:42.2857006Z ##[endgroup]
+2024-05-16T15:42:42.2860217Z Secret source: Actions
+2024-05-16T15:42:42.2860929Z ##[debug]Primary repository: Quantinatium/vscode-gitlens
+2024-05-16T15:42:42.2861778Z Prepare workflow directory
+2024-05-16T15:42:42.2925529Z ##[debug]Creating pipeline directory: '/home/runner/work/vscode-gitlens'
+2024-05-16T15:42:42.2928785Z ##[debug]Creating workspace directory: '/home/runner/work/vscode-gitlens/vscode-gitlens'
+2024-05-16T15:42:42.2930336Z ##[debug]Update context data
+2024-05-16T15:42:42.2933823Z ##[debug]Evaluating job-level environment variables
+2024-05-16T15:42:42.3407736Z ##[debug]Evaluating job container
+2024-05-16T15:42:42.3411134Z ##[debug]Evaluating job service containers
+2024-05-16T15:42:42.3413546Z ##[debug]Evaluating job defaults
+2024-05-16T15:42:42.3494365Z Prepare all required actions
+2024-05-16T15:42:42.3650789Z Getting action download info
+2024-05-16T15:42:42.5556991Z Download action repository 'actions/checkout@v3' (SHA:f43a0e5ff2bd294095638e18286ca9a3d1956744)
+2024-05-16T15:42:42.5585662Z ##[debug]Copied action archive '/opt/actionarchivecache/actions_checkout/f43a0e5ff2bd294095638e18286ca9a3d1956744.tar.gz' to '/home/runner/work/_actions/_temp_4bfd6928-cc0b-4741-b919-0df0238e8ebe/c3290d05-da79-417c-8137-855dccaded8c.tar.gz'
+2024-05-16T15:42:42.6454226Z ##[debug]Unwrap 'actions-checkout-f43a0e5' to '/home/runner/work/_actions/actions/checkout/v3'
+2024-05-16T15:42:42.6608950Z ##[debug]Archive '/home/runner/work/_actions/_temp_4bfd6928-cc0b-4741-b919-0df0238e8ebe/c3290d05-da79-417c-8137-855dccaded8c.tar.gz' has been unzipped into '/home/runner/work/_actions/actions/checkout/v3'.
+2024-05-16T15:42:42.6725455Z Download action repository 'github/codeql-action@v2' (SHA:d05fceb0450a68babd9a7597626abef20f03dad6)
+2024-05-16T15:42:44.1071031Z ##[debug]Download 'https://api.github.com/repos/github/codeql-action/tarball/d05fceb0450a68babd9a7597626abef20f03dad6' to '/home/runner/work/_actions/_temp_a7707533-4684-4dba-bbff-b4f24bc4b2b9/3671de68-2965-4b7a-a2e5-1351137ef276.tar.gz'
+2024-05-16T15:42:45.1120225Z ##[debug]Unwrap 'github-codeql-action-d05fceb' to '/home/runner/work/_actions/github/codeql-action/v2'
+2024-05-16T15:42:46.8639521Z ##[debug]Archive '/home/runner/work/_actions/_temp_a7707533-4684-4dba-bbff-b4f24bc4b2b9/3671de68-2965-4b7a-a2e5-1351137ef276.tar.gz' has been unzipped into '/home/runner/work/_actions/github/codeql-action/v2'.
+2024-05-16T15:42:47.0896007Z ##[debug]Action 'github/codeql-action@v2' already downloaded at '/home/runner/work/_actions/github/codeql-action/v2'.
+2024-05-16T15:42:47.0936507Z ##[debug]action.yml for action: '/home/runner/work/_actions/actions/checkout/v3/action.yml'.
+2024-05-16T15:42:47.1894260Z ##[debug]action.yml for action: '/home/runner/work/_actions/github/codeql-action/v2/init/action.yml'.
+2024-05-16T15:42:47.1962079Z ##[debug]action.yml for action: '/home/runner/work/_actions/github/codeql-action/v2/analyze/action.yml'.
+2024-05-16T15:42:47.2130545Z ##[debug]Set step '__actions_checkout' display name to: 'Checkout repository'
+2024-05-16T15:42:47.2132392Z ##[debug]Set step '__github_codeql-action' display name to: 'Initialize CodeQL'
+2024-05-16T15:42:47.2133784Z ##[debug]Set step '__github_codeql-action_2' display name to: 'Perform CodeQL Analysis'
+2024-05-16T15:42:47.2134712Z Complete job name: Analyze (javascript)
+2024-05-16T15:42:47.2148628Z ##[debug]Collect running processes for tracking orphan processes.
+2024-05-16T15:42:47.2374019Z ##[debug]Finishing: Set up job

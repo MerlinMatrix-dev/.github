@@ -1,0 +1,58 @@
+﻿2024-05-16T15:45:56.1194681Z ##[debug]Evaluating condition for step: 'Post Checkout repository'
+2024-05-16T15:45:56.1195807Z ##[debug]Evaluating: always()
+2024-05-16T15:45:56.1196036Z ##[debug]Evaluating always:
+2024-05-16T15:45:56.1196232Z ##[debug]=> true
+2024-05-16T15:45:56.1196514Z ##[debug]Result: true
+2024-05-16T15:45:56.1197031Z ##[debug]Starting: Post Checkout repository
+2024-05-16T15:45:56.1227571Z ##[debug]Loading inputs
+2024-05-16T15:45:56.1228361Z ##[debug]Evaluating: github.repository
+2024-05-16T15:45:56.1228510Z ##[debug]Evaluating Index:
+2024-05-16T15:45:56.1228625Z ##[debug]..Evaluating github:
+2024-05-16T15:45:56.1228731Z ##[debug]..=> Object
+2024-05-16T15:45:56.1228932Z ##[debug]..Evaluating String:
+2024-05-16T15:45:56.1229049Z ##[debug]..=> 'repository'
+2024-05-16T15:45:56.1229227Z ##[debug]=> 'Quantinatium/vscode-gitlens'
+2024-05-16T15:45:56.1229383Z ##[debug]Result: 'Quantinatium/vscode-gitlens'
+2024-05-16T15:45:56.1230758Z ##[debug]Evaluating: github.token
+2024-05-16T15:45:56.1230877Z ##[debug]Evaluating Index:
+2024-05-16T15:45:56.1231010Z ##[debug]..Evaluating github:
+2024-05-16T15:45:56.1231112Z ##[debug]..=> Object
+2024-05-16T15:45:56.1231233Z ##[debug]..Evaluating String:
+2024-05-16T15:45:56.1231341Z ##[debug]..=> 'token'
+2024-05-16T15:45:56.1231621Z ##[debug]=> '***'
+2024-05-16T15:45:56.1231852Z ##[debug]Result: '***'
+2024-05-16T15:45:56.1239358Z ##[debug]Loading env
+2024-05-16T15:45:56.1244324Z Post job cleanup.
+2024-05-16T15:45:56.2052343Z ##[debug]Getting git version
+2024-05-16T15:45:56.2067654Z [command]/usr/bin/git version
+2024-05-16T15:45:56.2126697Z git version 2.43.2
+2024-05-16T15:45:56.2145535Z ##[debug]0
+2024-05-16T15:45:56.2146064Z ##[debug]git version 2.43.2
+2024-05-16T15:45:56.2146211Z ##[debug]
+2024-05-16T15:45:56.2148859Z ##[debug]Set git useragent to: git/2.43.2 (github-actions-checkout)
+2024-05-16T15:45:56.2152822Z ::add-mask::***
+2024-05-16T15:45:56.2167739Z Temporarily overriding HOME='/home/runner/work/_temp/58b157ff-4dbc-48da-a6a7-93a4409bc6c8' before making global git config changes
+2024-05-16T15:45:56.2168659Z Adding repository directory to the temporary git global config as a safe directory
+2024-05-16T15:45:56.2174278Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/vscode-gitlens/vscode-gitlens
+2024-05-16T15:45:56.2210022Z ##[debug]0
+2024-05-16T15:45:56.2210758Z ##[debug]
+2024-05-16T15:45:56.2217187Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2024-05-16T15:45:56.2251455Z ##[debug]1
+2024-05-16T15:45:56.2251951Z ##[debug]
+2024-05-16T15:45:56.2257704Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2024-05-16T15:45:56.2508855Z ##[debug]0
+2024-05-16T15:45:56.2509390Z ##[debug]
+2024-05-16T15:45:56.2514702Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2024-05-16T15:45:56.2543998Z http.https://github.com/.extraheader
+2024-05-16T15:45:56.2549996Z ##[debug]0
+2024-05-16T15:45:56.2550719Z ##[debug]http.https://github.com/.extraheader
+2024-05-16T15:45:56.2551090Z ##[debug]
+2024-05-16T15:45:56.2555148Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2024-05-16T15:45:56.2587624Z ##[debug]0
+2024-05-16T15:45:56.2588222Z ##[debug]
+2024-05-16T15:45:56.2593051Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2024-05-16T15:45:56.2839703Z ##[debug]0
+2024-05-16T15:45:56.2840246Z ##[debug]
+2024-05-16T15:45:56.2840945Z ##[debug]Unsetting HOME override
+2024-05-16T15:45:56.2909059Z ##[debug]Node Action run completed with exit code 0
+2024-05-16T15:45:56.2912424Z ##[debug]Finishing: Post Checkout repository
